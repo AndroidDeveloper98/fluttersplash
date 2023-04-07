@@ -2,22 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:flutterui/ui/splash_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MainActivity());
 }
 
-class MyApp extends StatefulWidget {
+class MainActivity extends StatefulWidget {
+  const MainActivity({Key? key}) : super(key: key);
   @override
-  _MyAppState createState() => _MyAppState();
+  State<MainActivity> createState() => _MainActivityState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _MainActivityState extends State<MainActivity> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Flutter",
+      title: "Flutter UI",
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );
   }
 }
-
