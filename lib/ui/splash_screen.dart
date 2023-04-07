@@ -1,6 +1,7 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
+import 'package:flutterui/ui/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -27,15 +28,16 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void navigationPage() {
-    Navigator.push(
+    Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-            builder: (BuildContext context) => const HomeScreen()));
+            builder: (BuildContext context) => const LoginScreen()));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue,
       body: Center(
         child: Image.asset(
           'assets/images/flutter_icon.png',
