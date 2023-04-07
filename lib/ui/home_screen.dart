@@ -8,9 +8,9 @@ class HomeScreen extends StatelessWidget {
     return const Scaffold(
       body: Center(
         child: Text(
-          "Welcome In Flutter",
+          "Home Page",
           style: TextStyle(
-            fontSize: 20.0,
+            fontSize: 40.0,
             color: Colors.black,
           ),
         ),

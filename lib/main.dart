@@ -14,7 +14,7 @@ class MainActivity extends StatefulWidget {
 class _MainActivityState extends State<MainActivity> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: "Flutter UI",
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),

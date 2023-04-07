@@ -4,7 +4,6 @@ import 'home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
-
   final Color backgroundColor = Colors.white;
   final TextStyle styleTextUnderTheLoader = const TextStyle(
       fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.black);
@@ -14,7 +13,6 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
   final splashDelay = 5;
 
   @override
@@ -29,7 +27,10 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void navigationPage() {
-    Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => const HomeScreen()));
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (BuildContext context) => const HomeScreen()));
   }
 
   @override
@@ -45,4 +46,3 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
-
